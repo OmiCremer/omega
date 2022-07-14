@@ -1,0 +1,12 @@
+<h1>Tintas</h1>
+<section>
+    <ul>
+        <% for (let listarTinta of listarTintas) {%>
+        <li>
+            <p><%- listarTinta.nombre %></p>
+            <p><%- listarTinta.descripcion %></p>
+            <p><%- listarTinta.detalle1 %></p>
+        </li>
+        <% } %> 
+    </ul>
+</section>

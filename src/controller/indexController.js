@@ -1,6 +1,11 @@
+
+const { mostrarTintas } = require('../service/service')
+
 const indexController = {
    index(req, res) {
-        res.render("index")
+    const listarTintas = mostrarTintas()
+        res.render("index", {listarTintas})
     }
 }
+
 module.exports = indexController
